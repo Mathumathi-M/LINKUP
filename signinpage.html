@@ -1,0 +1,241 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport"content="width=device-width,initial-scale=1,shrink-to-fit=no"> 
+    <link rel="stylesheet" href="bootstrapmain.css">
+	<link rel="stylesheet"	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> 
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<title>Linkup</title> 
+	<style>
+		  .float-right li a{
+    
+}
+*{
+    font-family: cursive;
+}
+nav{
+	position: sticky;
+}
+.navbar-brand{
+    font-weight: bolder;
+    color: darkslategrey;
+    font-family:'Courier New', Courier, monospace;
+}
+strong:hover{
+    font-family:'Courier New', Courier, monospace;
+    font-size: larger;
+    color: rgb(58, 51, 51);
+    color: rgb(12, 11, 12);
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(144, 135, 135), 0 0 5px darkblue;
+
+}
+.svg-icon.search-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+  
+    /* On hover: blue strokes */
+    &:focus,
+    &:hover {
+      .search-path {
+        stroke: rgb(41, 158, 204);
+        fill:  rgb(41, 158, 204);
+      }
+    }
+  
+    /* On click: thicker black strokes  */
+    &:active {
+      .search-path {
+        stroke: #111516;
+        stroke-width: 2px;
+      }
+    }
+  }.cen{
+  margin-inline: center; position: relative;
+  }
+	</style>
+</head> 
+
+<body> 
+	<!-- <h1 class=" mt-5 text-dark text-center context" style="font-family: cursive;" >LINKUP LOGIN PAGE </h1>  -->
+     <!-- NAV BAR  -->
+	 <nav class="navbar navbar-light  sticky-top bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="U-ezgif.com-crop.gif" alt="" width="50" height="55" class="d-inline-block align-text-top">
+         <strong class="cen">LINKUP</strong>
+          </a>
+          <form class="d-flex">
+            <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">
+                <div >
+                    <a>
+<!-- Here's the inline SVG icon -->
+                      <svg  class="svg-icon search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">A magnifying glass icon.</desc><g class="search-path" fill="none" stroke="#848F91"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+                    </a>
+                  </div>
+             </button>
+          </form>
+          <a class="navbar-brand" href="#">
+            <figure>
+             <img src="home-svg.svg" alt="home" width="35" height="35" class="d-inline-block align-text-top" style="margin-top: 100;">
+             <figcaption class="image">Home</figcaption>
+            </figure>
+          </a>
+          <a class="navbar-brand" href="#">
+            <figure>
+            <img src="chat-png.png" alt="home" width="30" height="30" class="d-inline-block align-text-top">
+            <figcaption class="image">Message</figcaption>
+          </figure>
+          </a>
+          <a class="navbar-brand" href="#">
+            <figure>
+            <img src="notification-png.png" alt="home" width="30" height="30" class="d-inline-block align-text-top">
+            <figcaption class="image">Notification</figcaption>
+          </figure>
+          </a>
+          <a class="navbar-brand" href="#">
+            <figure>
+            <img src="crown-png.png" alt="home" width="30" height="30" class="d-inline-block align-text-top">
+            <figcaption class="image">Premium</figcaption>
+          </figure>
+          </a>
+          <a class="navbar-brand" href="#">
+            <figure>
+            <img src="profile.png" alt="home" width="30" height="30" class="d-inline-block align-text-top" style="border-radius: 50%;">
+            <figcaption class="image">My Profile</figcaption>
+          </figure>
+          </a>
+          <a class="navbar-brand" href="#">
+            <figure>
+            <img src="grid.png" alt="home" width="30" height="25" class="d-inline-block align-text-top">
+            <figcaption class="image">Business</figcaption>
+          </figure>
+          </a>
+        </div>    
+        </nav>
+         <!-- above the footer -->
+    <div class="alert alert-warning alert-dismissible fade show p-2" role="alert" style="width:100%; text-align: center; font-size: large;">
+      Didn't Login ?
+       
+  
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal" style="margin-left: 1rem;">
+    Login
+  </button>
+  
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+          <div class="p-4 " style="font-weight: bolder; color: #8a9597; background-color: beige;">LOGIN</div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        
+        <div class="modal-body" style="text-align: none;background-color: rgb(173, 215, 175);">
+          <!--  form login
+                                               form login  -->
+          <form class="form" style="text-align: left;">
+            <div  class="mb-3"  style="text-align:center;" >
+              <img src="./profile.png" alt="PROFILE" style="border-radius: 50%;" width="20%" height="20%">
+            </div>
+            <div class="mb-3">
+              <label for="username" class="form-label">EMAIL</label>
+              <input type="text" class="form-control" id="username" placeholder="Enter your username">
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Enter your password">
+            </div>
+            <div class="p-2">
+            <!-- <button type="submit"class="btn btn-primary">Login</button> -->
+            <a href="grid.html" type="button" class="btn btn-primary">Login</a>
+             <button type="reset" class="btn btn-primary">Reset</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+<div class="area" >
+    <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <l
+i></li>
+            <li></li>
+            <li></li>
+
+	<div class="container mt-5 "> 
+		<div class="row justify-content-center"> 
+			<div class="col-md-6"> 
+				<div class="card"> 
+					<div class="card-body"> 
+            <div  class="mb-3"  style="text-align:center;" >
+              <img src="./profile.png" alt="PROFILE" style="border-radius: 50%;" width="20%" height="20%">
+            </div>
+						<form id="registrationForm" action=""> 
+							<div class="form-group"> 
+								<label for="name">Name</label> 
+								<input type="name"class="form-control"id="name"placeholder="name" required> 
+							</div> 
+							<!-- <div class="form-group">  -->
+								<!-- <label for="name">Last Name</label>  -->
+								<!-- <input type="name"class="form-control"id="name"placeholder="name" required>  -->
+							<!-- </div>  -->
+							<div class="form-group"> 
+						
+								<label for="email">Email</label> 
+								<input type="email"class="form-control"id="email"placeholder="Email" required> 
+							</div> 
+							<div class="form-group"> 
+								<label for="password">Password </label> 
+								<input type="password"class="form-control"id="password"placeholder="Password" required> 
+							</div> 
+              <div class="form-group">
+                <label>Select your gender&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="radio" id="gender" name="male" value="male">
+  <label for="male">Male</label>&nbsp;&nbsp;
+  <input type="radio" id="gender" name="female" value="female">
+  <label for="female">FeMale</label>&nbsp;&nbsp;
+  <input type="radio" id="gender" name="others" value="others">
+  <label for="others">Others</label>
+              </div>
+
+							<div class="form-group"> 
+								<label for="number">Phone Number </label> 
+								<input type="tel"class="form-control" value="+91" width="10"> 
+							</div> 
+							
+							<a href="./grid.html" class="btn btn-success">Submit</a>
+              <a href="signinpage.html" class="btn btn-danger">Reset</a>
+						</form> 
+						<p class="mt-3">Already if have an account?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="grid.html"class="btn btn-primary" >Login</a></p> 
+					
+                    </div> 
+				</div> 
+			</div> 
+		</div> 
+	</div>
+    </ul>
+</div>
+</body> 
+
+</html>
